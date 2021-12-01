@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>calculator Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Calculadora</h1>
+  
+  <ion-row>
+    <ion-col size="4">
+      <label for="nombre">Nombre</label>
+    </ion-col>
+    <ion-col size="8">
+      <ion-content>
+        <ion-input type="text"[(ngModel)]="nombre"></ion-input>
+      </ion-content>
+    </ion-col>
+  </ion-row>
+ 
+  <ion-row>
+    <ion-col size="4">
+      <label for="precio">Precio</label>
+    </ion-col>
+    <ion-col size="8">
+      <ion-content>
+        <ion-input type="number"[(ngModel)]="precio"></ion-input>
+      </ion-content>
+    </ion-col>
+  </ion-row>
+  
+  
+  
+  <ion-button  expand="full" (click)="addproduct(precio)">Agregar producto</ion-button>
+  <ion-content class="precio">
+    <h2>Total a pagar: </h2>
+    <ion-input [(ngModel)]="total" disabled="true"></ion-input>
+  </ion-content>
+  
+
+</ion-content>

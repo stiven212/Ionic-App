@@ -1,0 +1,7 @@
+{
+  "name": "devdacticSql",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
